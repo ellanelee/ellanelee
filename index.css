@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box; 
+}
+
 body, html {
   margin : 0 ;   
   padding: 0 ;
@@ -9,7 +13,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    weight: 100vw;
+    width: 100vw;
     background-color: rgb(90,90,90)
 }
 main {
@@ -24,8 +28,8 @@ main {
     background-size:110%;
 }  
 
-* {
-    box-sizing: border-box; 
+#display.hover {
+    transform: rotate( 45deg );
 }
 
 #display {
@@ -38,6 +42,7 @@ main {
     align-items: flex-end;
     padding: 10px;
     font-size: 3rem; 
+    transition: all ease 1s;
 }
 
 #pad {
@@ -59,12 +64,14 @@ main {
     width: 4rem;
     height : 4rem;  
     border-radius: 50%;
+    border-style : none;
 }
 
 #pad_bin_n0 {
     width: 8.7rem;
     height : 4rem;  
     border-radius: 100px;
+    border-style: none;
 
 }
 
